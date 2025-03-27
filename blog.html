@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>blog</title>
+<style>
+	body {
+    background-image: url("background.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    text-align: center; 
+    margin: 0; 
+}
+	#header{
+		border-bottom: 3px solid black;;
+		background: #4CA6DE;
+		border-radius: 31px;
+	}
+	#footer{
+		background:#6450FF;
+		border-top: 3px solid black;
+		border-radius: 9px;
+		top: 0%;
+		border: 100%;
+	}
+	
+	.blogc{
+		border: 3px SOLID #020202;
+		background:#AF6D6E;
+		border-radius: 16px;
+		width: 1000px
+}
+
+	.bropic{
+		border-radius: 90px;
+		width: 53px;
+	}
+	
+	.txtandpic{
+		background: #9ED8F3;
+		border: 2px SOLID #020202;
+		border-radius: 6px;
+}
+	
+	.apic{
+		right:0px;
+	}
+	
+	.picino{
+		border: 2px SOLID #020202;
+		right:0px;
+		left: 100px;
+		width: 363px;
+		height: 363px;
+		border-radius: 16px;
+	}
+	
+	#botj{
+		background: #56C871;
+		border: 1px solid #2B1B1C;
+		border-radius:5px;
+		width: 12px;
+		height: 11px;
+	}
+	
+</style>
+</head>
+<center>
+<body>
+<header id="header">
+	<img src="logo.png" width="140" height="" alt=""/>
+	<br>
+ (todays date:<span id="gregorian-date"></span>)
+</header>
+	<br><br><br><br><br><br><br><br><br><br>
+	<div class="blogc">
+	<center>
+	<div class="bro">
+		<img src="bro.png" class="bropic" alt=""><h3 class="topic">welcome!</h3>
+	</div>
+		</center>
+	<div class="txtandpic">
+		<div class="atxt">
+			<p>Hi, welcome to my blog! ???? Subscribe to my YouTube channel and you'll get exclusive content, behind-the-scenes action, and advance notice of my new posts and projects. I upload exciting tutorials, insightful discussions, fun vlogs, and useful tips to keep you updated and entertained.
+
+By subscribing, you'll be the first to know about new content, giveaways, and special collaborations. Your support is my everything and it helps me produce even more amazing content for you! So subscribe now and let's grow together! ????????????</p>
+		</div>
+		<div class="apic">
+			<center>
+			<img src="pic1b.jpg" class="picino" alt="">
+			</center>
+		</div>
+		<div id="bottij">
+			<a href="blog2.html"><botton id="botj">enter</botton></a>
+		</div>
+	</div>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br>
+<footer id="footer">All rights to this site belong to<a href="https://sites.google.com/view/noori0688" style="color:aliceblue"><strong>Amir Ali Noori.</strong></a></footer>
+</center>
+	<script>
+	let today = new Date();
+        let gregorianDate = today.getFullYear() + '/' + 
+                            String(today.getMonth() + 1).padStart(2, '0') + '/' + 
+                            String(today.getDate()).padStart(2, '0');
+        document.getElementById("gregorian-date").innerText = gregorianDate;
+
+
+	</script>
+</body>
+	
+
+</html>
